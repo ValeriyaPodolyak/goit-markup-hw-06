@@ -435,7 +435,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="ftr-socials-item">
+                <li class="ftr-socials-item link">
                   <a class="ftr-socials-link link" href="" target="_blank" rel="noopener noreferrer" aria-label="иконка Facebook">
                     <svg class="ftr-socials-icons" width="20" height="20">
                       <use href="./images/sprite.svg#icon-facebook_footer">
@@ -453,6 +453,21 @@
                 </li> 
               </ul>
       </li>
+      <!-- Subscription form -->
+      <li class="ftr-subscription-item ftr-item"> 
+        <b class="subscription-caption">Подпишитесь на рассылку</b>
+        <form class="subscription-form" name="subscription-form" >
+          <label for="email-subscription"></label>
+            <input type="email" name="subscription-form" id="email-subscription" placeholder="E-mail" />
+          <button type="submit" class="subscription-button">
+            <span class="subscription-button-label">Подписаться</span> 
+             <svg class="subscription-icons" width="24" height="24">
+                      <use href="./images/sprite.svg#icon-icon-send-subscribe">
+                      </use>
+                    </svg>
+          </button> 
+        </form>
+      </li>
       </ul>
      </div>
     </footer>
@@ -465,8 +480,43 @@
                       </use>
                     </svg>
 </button>
-<form class="modal-form"></form>
+<form class="modal-form">
+  <b>Оставьте свои данные, мы вам перезвоним</b> 
+  <label for="callback">
+    <span>Имя</span>
+    <input type="name" name="callback-form" id="callback-form" />
+ <svg class="" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-person-callback">
+                      </use>
+                    </svg>
+  </label>
+  <label for="callback">
+    <span>Телефон</span>
+    <input type="phone" name="callback-form" id="callback-form" />
+ <svg class="" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-phone-black-callback">
+                      </use>
+                    </svg>
+  </label>
+  <label for="callback">
+    <span>Почта</span>
+    <input type="email" name="callback-form" id="callback-form" />
+ <svg class="" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-email-black-callback">
+                      </use>
+                    </svg>
+  </label>
+  <label for="callback">
+    <span>Комментарий</span>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+    <input type="checkbox" name="" value="Соглашаюсь с рассылкой и принимаю Условия договора" />
+    <button type="submit" class="">
+            Отправить
+          </button> 
+  </label>
+</form>
               </div>
+              <label for=""></label>
             </div>
      <script src="./js/modal.js"></script>
   </body>
