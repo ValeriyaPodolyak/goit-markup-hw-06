@@ -326,6 +326,41 @@ color: #757575;
 text-decoration-line: underline;
 color: #2196F3;
 }
+.subscription-button-label {
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--white-color);
+}
+.submit-btn {
+    display: block;
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px 55px;
+width: 200px;
+height: 50px;
+background: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+cursor: pointer;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+background-color: #188CE8;
+}
 /* Custom checkbox style */
 .custom-checkbox {
     width: 16px;
@@ -334,21 +369,28 @@ color: #2196F3;
     align-items: center;
     justify-content: center;
     border: 2px solid #212121;
+    border-radius: 2px;
     margin-right: 10px;
+    transition: background-color 250ms var(--cubic), border 250ms var(--cubic);
 }
 .custom-checkbox-icon {
-    /* opacity: 0; */
+    /* width: 11px;
+    height: 8px; */
+    opacity: 0;
+    transition: opacity 250ms var(--cubic);
 }
-.checkbox:checked+ .custom-checkbox {
+.checkbox:checked+.custom-checkbox {
 border: 2px solid #2196F3;
+background-color: var(--accent);
 }
-.checkbox:checked+ .custom-checkbox .custom-checkbox-icon{
-    /* opacity: 1; */
+.checkbox:checked+.custom-checkbox .custom-checkbox-icon {
+    opacity: 1;
 }
 .modal-form-label-checkbox {
     display: flex;
     align-items: center;
 }
+
 /* Advantages style */
 .advantages {
     background-color: var(--white-color);
