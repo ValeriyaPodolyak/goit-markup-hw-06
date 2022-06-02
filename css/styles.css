@@ -257,8 +257,8 @@ padding: 0;
     fill: var(--black-color);
     transition: fill 250ms var(--cubic);
 }
-.modal-icons:hover,
-.modal-icons:focus {
+.modal-button:hover .modal-icons,
+.modal-button:focus .modal-icons {
     fill: #2196F3;
 }
 strong {
@@ -309,8 +309,8 @@ transition: border 250ms var(--cubic);
     fill: #212121;
     transition: fill 250ms var(--cubic);
 }
-.modal-form-label:hover .modal-form-icon,
-.modal-form-label:focus .modal-form-icon {
+.modal-form-input:hover+.modal-form-icon,
+.modal-form-input:focus+.modal-form-icon {
     fill: var(--accent)
 }
 .modal-form-label-textarea {
@@ -338,7 +338,6 @@ letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
 }
 .form-policy-desc {
-    margin-left: 9px;
     font-weight: 400;
 font-size: 14px;
 line-height: 24px;
@@ -370,6 +369,7 @@ height: 50px;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+border: #2196F3;
 font-weight: 700;
 font-size: 16px;
 line-height: 30px;
@@ -412,6 +412,7 @@ background-color: var(--accent);
 .modal-form-label-checkbox {
     display: flex;
     align-items: center;
+  justify-content: center;
 }
 
 /* Advantages style */
@@ -732,6 +733,15 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 transition: border 250ms var(--cubic);
 }
+.subscription-input-email-form::placeholder {
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
 .subscription-input-email-form:hover,
 .subscription-input-email-form:focus {
     border: 1px solid var(--accent);
@@ -745,6 +755,7 @@ height: 50px;
 margin-left: 12px;
 padding: 10px 28px;
 background-color: var(--accent);
+    border: var(--accent) ;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 transition: background-color 250ms var(--cubic);
